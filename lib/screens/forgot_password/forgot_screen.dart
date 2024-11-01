@@ -170,7 +170,7 @@ class _ForgotScreenState extends State<ForgotScreen> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const SignUpScreen2(), // Change to appropriate screen
+                builder: (context) => const SignInScreen(), // Change to appropriate screen
               ),
             );
           },

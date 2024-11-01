@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:linkedin1/main_page.dart';
+import 'package:linkedin1/screens/forgot_password/forgot_password.dart';
+import 'package:linkedin1/screens/forgot_password/forgot_screen.dart';
 import 'package:linkedin1/screens/signup_page/signup_screen2.dart';
 import 'package:linkedin1/widgets/constants.dart';
 
@@ -242,7 +244,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const MainPage(),
+                            builder: (context) => const ForgotScreen(),
                           ),
                         );
                       },

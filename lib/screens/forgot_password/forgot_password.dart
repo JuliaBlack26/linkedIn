@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:linkedin1/screens/signin_page/signin_screen.dart';
 import 'package:linkedin1/screens/signup_page/signup_screen.dart';
 import 'package:linkedin1/screens/signup_page/signup_screen2.dart';
 import 'package:linkedin1/widgets/constants.dart';
 
-class SignInScreen extends StatefulWidget {
-  const SignInScreen({super.key});
+class ForgotPassword extends StatefulWidget {
+  const ForgotPassword({super.key});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  State<ForgotPassword> createState() => _ForgotPasswordState();
 }
 
-class _SignInScreenState extends State<SignInScreen> {
+class _ForgotPasswordState extends State<ForgotPassword> {
   bool remember = false;
   bool _obscureText = true;
 
@@ -240,8 +241,8 @@ class _SignInScreenState extends State<SignInScreen> {
         child: ElevatedButton(
           onPressed: onPressed,
           style: ButtonStyle(
-            backgroundColor: WidgetStateProperty.all<Color>(Colors.white),
-            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25),
                 side: const BorderSide(color: Colors.black),
@@ -287,8 +288,8 @@ class _SignInScreenState extends State<SignInScreen> {
             );
           },
           style: ButtonStyle(
-            backgroundColor: WidgetStateProperty.all<Color>(kPrimaryColor),
-            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+            backgroundColor: MaterialStateProperty.all<Color>(kPrimaryColor),
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25),
                 side: const BorderSide(color: kPrimaryColor),

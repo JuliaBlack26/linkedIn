@@ -155,7 +155,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const SizedBox(height: 10),
-                  Container(
+                  SizedBox(
                     width: sizingInformation.screenSize.width,
                     child: Image.asset(
                       _post[index].image!,
@@ -168,17 +168,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Row(
                         children: [
-                          Container(
+                          SizedBox(
                             width: 25,
                             height: 25,
                             child: Image.asset("assets/icons/like_icon.png"),
                           ),
-                          Container(
+                          SizedBox(
                             width: 25,
                             height: 25,
                             child: Image.asset("assets/icons/celebrate_icon.png"),
                           ),
-                          Container(
+                          SizedBox(
                             width: 25,
                             height: 25,
                             child: Image.asset("assets/icons/love_icon.png"),
